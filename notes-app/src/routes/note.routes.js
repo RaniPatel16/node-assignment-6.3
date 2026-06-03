@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const {} = require("../controllers/note.controller");
+const { createNote } = require("../controllers/note.controller");
 
-// Routes will go here
+// CRUD single-item routes LAST
+router.post("/", createNote);
 
 module.exports = router;
